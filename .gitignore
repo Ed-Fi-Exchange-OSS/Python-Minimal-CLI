@@ -1,0 +1,12 @@
+*.json
+__pycache__
+*.pyc
+*.txt
+*.env
+*.log
+.Python
+.pytest_cache/
+lib/
+bin/
+include/
+config.toml
