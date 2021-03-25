@@ -1,0 +1,30 @@
+[general]
+profile_logging=true
+logging_format="json"
+max_workers=4
+# ^^ if not set, max_workers defaults to number of CPUs in system time 5 - https://docs.python.org/3/library/concurrent.futures.html#threadpoolexecutor
+async_requests=false
+# ^^ set to true to run async
+
+[prod_ABCD]
+edfi_client_id="changeme"
+edfi_client_secret="changeme"
+edfi_base_url="https://api_production.example.org/ODS"
+default_year=2018
+verify_ssl=false
+api_ver="v3.1"
+
+[prod_WXYZ]
+edfi_client_id="changeme"
+edfi_client_secret="changeme"
+edfi_base_url="https://api_production.example.org/ODS"
+
+[staging_ABCD]
+edfi_client_id="changeme"
+edfi_client_secret="changeme"
+edfi_base_url="https://api_staging.example.org/ODS/"
+
+[staging_WXYZ]
+edfi_client_id="changeme"
+edfi_client_secret="changeme"
+edfi_base_url="https://api_staging.example.org/ODS/ "    
